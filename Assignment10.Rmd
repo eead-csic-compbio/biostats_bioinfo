@@ -1,0 +1,64 @@
+---
+title: "Lecture 10: assignment"
+author:
+- affiliation: Fundación ARAID & Estación Experimental de Aula Dei-CSIC, Zaragoza
+    España <http://www.eead.csic.es/compbio>
+  name: Bruno Contreras Moreira
+date: '`r format(Sys.Date(),"%d/%b/%Y")`'
+output:
+  html_document:
+    fig_caption: yes
+    highlight: zenburn
+    number_sections: no
+    theme: cerulean
+---
+
+
+```{r knitr setup, include=FALSE,  eval=TRUE, echo=FALSE, warning=FALSE}
+library(knitr)
+knitr::opts_chunk$set(eval=TRUE, cache=FALSE, message=FALSE, warning=FALSE, 
+                      comment = "", results="markup")
+```
+
+## Exercise 10
+
+The goal is to learn how to assemble chloroplast genomes and how to inspect and validate them.
+You will need to download software and data files from
+[https://github.com/eead-csic-compbio/chloroplast_assembly_protocol](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol) in a **Linux** system:
+
+```{r, engine='bash', eval=FALSE}
+git clone https://github.com/eead-csic-compbio/chloroplast_assembly_protocol.git
+cd chloroplast_assembly_protocol
+perl install.pl
+```
+
+You should write a brief report with your notes about:
+
+### 10.1 Examples 
+
+Please follow the examples of the  [chloroplast_assembly_protocol](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol):
+
+  * Selecting chloroplast reads by $k$-mer composition (top of [flowchart](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol/blob/master/pics/0_get_cp_reads_1_cleanreads.png)):
+    + What proportion of the input reads are selected? 
+    + How many plastid genomes are there in *poaceae.fna*?
+    + What *k*-mer size was used in script *0_get_cp_reads.pl*?
+
+  * Quality filtering of plastid reads (bottom of [flowchart](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol/blob/master/pics/0_get_cp_reads_1_cleanreads.png)):
+    + Compare the FASTQC quality plots of the raw and processed reads at folder *reports/*
+    + What are the insert sizes and orientations of read libraries?
+    
+  * Assemblying contigs and scaffolding
+    + Try the demos of reference-based and de novo assembly, what do you obtain?
+    + How many CPU cores does *2_assemble_reads.pl* use by default?
+    + What is the default $k$-mer size used in *2_assemble_reads.pl*?
+    + In script *2_assemble_reads.pl* set *-cov_cutoff 50* in *$VELVETGPARAMS*, what happens?
+
+### 10.2 A real case: *Brachypodium distachyon*
+
+  * Repeat [HOWTO_brachy.txt](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol/blob/master/HOWTO_brachy.txt)
+    + Compare the scaffolds obtained with and without reference
+    + Try at least two recipes from [HOWTOcheck_assembly.txt](https://github.com/eead-csic-compbio/chloroplast_assembly_protocol/blob/master/HOWTOcheck_assembly.txt)
+    
+    
+    
+
