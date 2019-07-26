@@ -1,0 +1,15 @@
+
+
+## Main target  
+
+
+* To enable the student to access and use different bioinformatic/genetic databases
+
+* Provide a toolbox of statistical techniques to the student so he can  
+    + Explore and/or analyze bioinformatic/genetic data
+    + Interpret the results of these analysis
+
+* Provide appropriate (__R__) software platform to the student so he/she can  
+    + Develop the statistical techniques in previous toolbox
+    + Develop (code) his own techniques if required
+ 

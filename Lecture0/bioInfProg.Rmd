@@ -1,0 +1,80 @@
+
+<!--
+|subject|theory|hands-on|total|
+|-------|------|--------|-----|
+|Shell/Perl one-liners|1|1|2|
+|Algoritmos de alineamiento de secuencias|2||2|
+
+|caso: descubrimiento de secuencias reguladoras |1|3|4|
+
+|caso: alineamiento y filogenia de secuencias homólogas|1|3|4|
+
+|caso: ensamblaje de secuencias genómicas|1|3|4|
+
+|Algoritmos de comparación de estructuras moleculares|2|2|4|
+
+enlaces a entradas del blog
+-->
+
+### Shell/Perl one-liners
+
+* __TARGET:__ _To learn the basics of Perl one-liners when dealing with large data files in the Linux terminal_
+    
+### Sequence alignment
+
+* __TARGET:__ _To introduce algorithms for sequence alignment and be able to choose the most appropriate for each task_
+    + Pairwise alignment
+        + edit distance
+        + sequence identity
+        + substitution matrices
+        + similarity
+        + indels
+        + global and local alignments
+        + Burrows-Wheeler transform
+    + Multiple alignment
+    + Read mapping
+    + Pseudo-alignment by k-mer comparison
+
+### Case: discovery of regulatory sequences
+
+* __TARGET:__ _To learn how statistics can be used to discover regulatory sequences in gene promoters_
+    + Gene clustering based on expression
+    + Genomic background models
+    + Enrichment of oligonucleotides
+    + Motif comparison
+      + RSAT
+
+### Case: alignment and philogeny of homologous sequences	
+
+<!-- 1 + 3 http://161.111.227.80/compbio/material/alineafilog/node7.html -->
+* __TARGET:__ _To learn how to combine the tools required for the reconstruction of a molecular phylogeny of nucleotide and peptide sequences_
+    + BLAST+
+    + CLUSTAL OMEGA
+    + HMMER
+    + IQTREE
+    + Newick format
+
+### Case: assembling genomic sequences
+
+<!-- 1 + 3-->
+* __TARGET:__ _To learn how to assemble and annotate genomic and transcriptomic sequences_
+    + FASTQ format
+    + de Bruijn graphs
+    + Pan-genomes
+    + N50
+    + FASTQC
+    + Velvet
+    + Trinity
+    
+
+### Comparison and prediction of biomolecular structures 
+<!-- 2 + 2 -->
+* __TARGET:__ _To be acquainted with current approaches for the study of protein structure_
+    + PDB format
+    + structural classification of proteins
+    + secondary structure
+    + tertiary structure comparison
+      + MAMMOTH
+    + homology modelling
+    + fold recognition
+      + HHpred

@@ -1,0 +1,134 @@
+---
+title: "Predicting Gender"
+author: "J.Ojeda"
+date: "February 12, 2018"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Can we predict the gender if we know the height ?
+
+
+## The data
+
+
+The file [pulse.RData](./pulse.RData) has information about different phisical features of students
+```{r}
+load("pulse.RData")
+head(pulse)
+```
+
+
+Some basic exploratory data analysis:
+
+
+```{r}
+summary(pulse)
+plot(pulse[,c(6,7,9)],col=pulse$gender)
+```
+
+
+Some nonparametric density estimator:
+```{r}
+with(pulse, {
+  plot(density(heig[gender=="female"]),xlim=c(150,200))
+  lines(density(heig[gender=="male"]),col="red")
+  }
+)
+```
+
+
+## Use Naive Bayes to __fit__ Gender using height
+
+```{r}
+library(naivebayes)
+genderHeightNB<-naive_bayes(gender~heig,pulse)
+genderHeightNB
+```
+
+Notice: 
+
+* A priory probabilities are _relative frequency_ of genders:
+```{r}
+prop.table( table(pulse$gender) )
+```
+
+* Mean and sd(standard deviation) table gives the mean and sd of height given the genders (_for each gender_):
+```{r}
+aggregate(heig~gender,pulse,function(x) c(mean=mean(x),sd=sd(x)))
+```
+
+...But indeed is the mean and sd of a fitted gaussian distributions for the height given the genders
+```{r}
+plot(genderHeightNB)
+```
+
+
+## Use Naive Bayes to __predict__ Gender using height
+
+```{r}
+newData<-data.frame(heig=seq(from=150,to=200,by=10))
+predict(genderHeightNB,newData)
+```
+
+We can also predict _probabilities_:
+```{r}
+predict(genderHeightNB,newData,type="prob")
+```
+
+
+A bit better:
+```{r}
+cbind(newData,pred=predict(genderHeightNB,newData))
+```
+
+Let us see how many hits (successes) we do have:
+```{r}
+(a<-xtabs( ~gender+predict(genderHeightNB),pulse ))
+```
+
+Which means a `r round(100*sum(diag(a))/sum(a),2)`% of hits and 
+`r round(100*(1-sum(diag(a))/sum(a)),2)`% of misses.
+
+
+## ...but we haven't been very fair !!
+
+We have considered the same data to fit the _model_ and also to check how good it was... and that is not fair: should be simple to predict with the data you have !! 
+
+Lets consider a _random tests set_ of about a third of data and see what happens: 
+```{r}
+(test<-sample(nrow(pulse),nrow(pulse)/3))
+```
+
+First we fit it:
+```{r}
+genderHeightNBok<-naive_bayes(gender~heig,pulse[-test,])
+genderHeightNBok
+```
+
+...and we get:
+```{r}
+(a<-xtabs( ~gender+predict(genderHeightNBok,pulse[test,]),pulse[test,] ))
+(1-sum(diag(a))/sum(a))
+```
+
+Which means a `r round(100*sum(diag(a))/sum(a),2)`% of hits and 
+`r round(100*(1-sum(diag(a))/sum(a)),2)`% of misses.
+
+
+...Indeed it would be good to repeat with several random tests sets !!!
+
+__Do you dare to do it youself !!??__
+
+
+
+
+
+
+
+

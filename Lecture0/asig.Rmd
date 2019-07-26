@@ -1,0 +1,80 @@
+
+
+
+## TIMETABLE:  
+
+BIFI Computer room, 1st floor. From February 16th to June 1st 2018.
+
+## ...Main target
+
+This course introduces statistical and bioinformatics fundamental approaches for the study of high-throughput molecular biology and genomics data. It was designed as a hands-on course, where students will be learning concepts and applying them to selected problems by writing scripts in their computers from day one. Throughout 10 sessions, students will use the R and Perl languages.
+
+At the end of the lectures students should be able to:
+
+* ...To select the appropriate statistical framework to model some types of biological data.
+
+* ...To know fundamental computational tools for the study of genomes, genes and proteins, and their applications in biotechnology and biomedicine.
+
+* ...To perform simple programming tasks to solve a number of problems where statistics are required in the context of Computational Biology. Precisely we will work in `R` with `RStudio` and a little Perl.
+      
+      
+## ...Metodology
+
+The lectures and material will be focused on practical issues keeping in mind the basic ideas and formalization of problems whenever it be possible.  
+
+* _It is advised to_ :
+    + __MAKE YOUR OWN NOTES__: ...during the lectures you will have access to ideas, examples, discussions, etc... but there are _no formal lecture notes_ so it is a good idea to make your own
+    + __PRACTICE AS MUCH AS YOU CAN__: ...The genuine development of the examples given during the lectures will be of much profit for the student: _individually and collectivelly_
+    + __MAKE HONEST AND FAIR JOIN WORK__: to interact with others in an __honest way__, will exercise you in doing so in the future. Nowadays, more than ever, science is a _joint endeavor_ and to understand the dynamics of the interaction whit others is required.
+    + __DO NOT HESITATE USING ENGLISH__: ...You may like it or not, but English it is one of the most important languages of science (by almost any metric you may think). The best way to learn a language is to use it (_That also holds for any software coding framework_, like `R` and the IDE `RStudio`) so: _use it !!_...  
+      Teachers will try to do so, and if you do not understand them or if you are not able to make your self understood, do not be disappointed, be patient and ask later, may be outside the lecture room. If things get really weird in Spanish, but please try to use English in some or another way !! (...also `R`) !! .
+
+*  Evaluation: 
+    + Attendance is required to pass the course.
+    + The grade will depend on the development of programmed tasks and exercise: the more and the better you do, the better the degree will be.
+
+
+## Bibliography
+
+* ...The course is basically self contained.
+
+* [The R Project for Statistical Computing](https://www.r-project.org/)
+    + [CRAN](https://cran.r-project.org/index.html) and all its resources, see [RStuff](). See also <https://adv-r.hadley.nz/>
+    + [RStudio](https://www.rstudio.com/) and its companion packages [tidyverse](http://tidyverse.org/). See also <http://r4ds.had.co.nz/>.
+    + [Bioconductor](https://www.bioconductor.org/)  !!!
+    + [The Rcommander Project](http://www.rcommander.com/), and its Spanish translation [R-UCA](http://knuth.uca.es/R/doku.php?id=inicio)
+    
+* [Curso de Perl en Bioinformática](https://eead-csic-compbio.github.io/perl_bioinformatica)    
+
+* Very basic and simple probability and statistics resources (_not everything is OK, but most of it is. Certainly it is more than suitable for the required level in this course_)
+    + [Probability theory](_https://en.wikipedia.org/wiki/Probability_theory)
+    + [Frequentist inference](https://en.wikipedia.org/wiki/Frequentist_inference)
+    + [Bayesian_statistics](https://en.wikipedia.org/wiki/Bayesian_statistics)
+    + [Markov chains](https://en.wikipedia.org/wiki/Markov_chain)
+    + [Statistical learning theory](https://en.wikipedia.org/wiki/Statistical_learning_theory)
+    + Statistical [Hypothesis Testing](https://en.wikipedia.org/wiki/Statistical_hypothesis_testing) and the [Multiple comparisons problem](https://en.wikipedia.org/wiki/Multiple_comparisons_problem)
+    + ...
+
+* ...Other sources to study and get a deeper knowledge:
+    + [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+    + [Pattern Recognition and Machine Learning](http://www.springer.com/us/book/9780387310732)
+    + [Biological Sequence Analysis (Probabilistic models ...)](http://www.cambridge.org/gb/academic/subjects/life-sciences/genomics-bioinformatics-and-systems-biology/biological-sequence-analysis-probabilistic-models-proteins-and-nucleic-acids?format=PB&isbn=9780521629713#0Wl3r76odxP6Lzta.97)
+
+
+## Professorate
+
+* `r comm[["PROFESOR"]]`.
+    + TUTORIAS: `r comm[["TUTORIAS"]]`
+
+* Bruno Contreras Moreira <bcontreras@eead.csic.es>
+    + TUTORIAS: lunes por la mañana en la EEAD-CSIC, previa cita
+
+
+## Material
+
+* Webs:  
+    + Moodle: <https://moodle2.unizar.es/add/course/view.php?id=15421>.  
+    + Repository: <http://155.210.84.155/~alumnos/biotecCuant/>.  
+
+
+

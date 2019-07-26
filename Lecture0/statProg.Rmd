@@ -1,0 +1,256 @@
+
+
+
+### Probability
+
+* __TARGET:__ _To introduce basic probability concepts and ideas in order to develop the course_
+    + Random phenomena basics: Probability and Events
+    + Bayes Theorem: Conditional Probability and Independence
+    + Random variables: Discrete/Continuous, univariate and bivariate
+    + Some basic Random Variables and its use 
+    
+<!--
+
+#### Introduction: Random Variables
+
+* I know the mechanics of a random phenomena:  _How can i compute probabilities !?_ 
+
+* Formalizing the concept of randomness: Events
+    + Ways to _express_ random events
+
+* The concept of Random variable:
+    + Discrete and Continuous random variables
+    + Mean and Variance
+    + Frequency tables
+
+* Examples
+
+#### Some univariate distributions
+
+* Normal or Gaussian distribution
+    + Addition of Gaussian random variables
+    + The Central Limit Theorem
+    + Examples
+
+* Binomial process: Bernouilli, Binomial, Negative Binomial(Geometric) and HyperGeometric distributions 
+    + Examples
+
+* Computing probabilities 
+
+* Other useful distributions: Uniform, Possion, Exponential, Gamma, Beta, ... 
+
+#### Bivariate distributions
+
+* Joint probability: _one event, two measurements_
+
+* Conditional probability: _given one of the measurements of an envent, which is the value of the other measurement_
+    + Bayes Theorem: _transfer of information in a non deterministic framework_
+
+* Normal or Gaussian distribution:
+    + Mean vector and Variance Matrix: Correlation
+    + Conditional distribution
+
+-->
+
+----
+    
+### Frequentist Statistics
+
+* __TARGET:__ _To introduce basic statistical concepts required to develop the course while going over the most known techniques of Frequentist Statistics_
+    + Basics of sampling
+    + Basic statistics
+        + Point and Interval Estimation
+        + Hypothesis Testing
+        + Some nonparametric tests
+    + Linear Model
+
+<!--
+
+#### Introduction: Statistical process
+
+* I observe the pehnomena repeatedly:  _Wath can i say about it !?_ 
+
+* Formalizing the concept of Population
+
+* Formalizing the concept of Sample
+    + Independen/Dependent observations
+    + Sampling Biases
+    
+* Examples
+
+#### Classical Statistics
+
+* Main paradigm: _Population parameters are constants_
+
+* Basic Point Estimation:
+    + Point Estimation
+    + Interval Estimation
+    + Examples
+
+-->
+
+----
+    
+### Bayessian Statistics
+
+* __TARGET:__ _To introduce Bayessian statistical point of view and concepts required to develop the course while going over some their techniques_
+    + Basics of Bayesian Statistics
+    + Bayesian vs Frequentist Statistics
+    + Some Bayesian Statistics
+        + Point and Interval Estimation
+        + Hypothesis Testing
+    + Some Bayesian modelling tools for Linear Model
+
+<!--
+
+#### Bayessian Statistics
+
+* Main paradigm:  _Population parameters are rando variables_
+
+* Basic Point Estimation:
+    + Point Estimation
+    + Interval Estimation
+    + Examples
+
+-->
+
+----
+    
+
+### Classification and Clustering
+
+* __TARGET:__ _To introduce basic Classification and Clustering techniques, mostly from  the learning point of view_
+    + Classification/Agglomeration problem
+        + Supervised/Unsupervised learning
+        + ...
+    + Receiver Operating Characteristic (ROC) curve
+    + Clustering:
+        + Hierarchical clustering
+        + K-means
+        + ...
+    + Naive Bayes
+    + Cross Validation
+
+<!--
+
+#### Introduction: Classification poblem
+
+* The formal statement: Having into account sample data _Find groups or learn how to group in Population_
+
+#### Supervised learning
+
+* Clasificación mediante puntuaciones: R.O.C curve (Receiver Operating Characteristic)
+
+* Clasificador Bayes (Naive Bayes)
+
+* Examples
+
+#### Unsupervised learning
+
+* Clustering paradigm:  _group close individuals_
+
+* Hierarchical clustering
+
+* _K_ means
+
+* Examples
+
+-->
+
+----
+    
+### Markov Chains
+
+* __TARGET:__ _To introduce basics about Markov chains, Hidden Markov Models and the viterby algorithm_
+    + Markov Property and Discrete Random Markov Chains
+    + Hidden State Markov Models and Markov Chains
+    + Viterby Algorithm
+
+
+<!--
+
+#### Introduction: Discrete Dependent Random phenomena
+
+* I know the mechanics of a random phenomena:  _How can i compute probabilities !?_ 
+
+* Formalizing the concept of time dependence
+    + Markov Property
+    + Discrete Random Markov Chains
+    + Continuous Random Markov Chains
+    + Homogenous/Non Homogeneous Markov Chains
+
+* Examples
+
+#### Finite State Space Homogenous Markov Chains
+
+* Basic defintions and issues
+    + Reducibility
+    + Periodicity 
+    + Transience and Recurrence
+        + Mean recurrence time
+        + Mean number of visits
+    + Existence of limit distribution
+    + Reversibility
+    + ...
+
+* Examples
+
+#### __TODO__ Learning a language
+
+#### __TODO__ Hidden State Markov Model and Markov Chains
+
+#### __TODO__ Viterby. 
+
+-->
+
+----
+    
+### Hypotheses testing 
+
+* __TARGET:__ _To introduce basics Testing concepts and Multiple Testing to deal with large number of tests_
+    + Statistical Hypothesis Testing
+        + Basic Theory of Statistical Decision
+        + Errors and its measure
+    + Frequentist and Bayesian Statistical hypothesis testing
+    + Multiple testing problem: _Errors when we perform more than one test_
+        + Basic _p_-value correction strategies
+        + False Discover Rate
+        + _Q_-Value
+
+<!--
+
+#### Introduction to Statistical hypothesis testing
+
+* _Answer questions about the population given the sample_ 
+
+* Basic elements: hypothesis and critical regions
+
+* Errors and its probabilities. _p_-value
+
+* Examples
+
+#### Classical and Bayessian Statistical hypothesis testing
+
+* Classical tests for the mean  Statistical hypothesis testing
+
+* Bayessian tests for the mean  Statistical hypothesis testing
+
+* Examples
+
+####  Multiple testing
+
+* Multiple testing problem: _Errors when we perform more than one test_
+
+* Basic _p_-value correction
+
+* F.D.R (False Discover Rate)
+
+* _Q_-Value
+s
+* Examples
+
+-->
+
+
+[Stats Topics Intro](./statIntro.html)
+

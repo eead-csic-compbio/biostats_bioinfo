@@ -1,0 +1,155 @@
+---
+title: "Stats Topics Intro"
+author: "J.Ojeda"
+date: '`r format(Sys.Date(),"%d/%b/%Y")`'
+output:
+  ioslides_presentation:
+    highlight: zenburn
+    theme: cerulean
+    css: ../comm/bkgr.css
+    fig_caption: yes
+    incremental: yes
+    logo: ../comm/quantBiotech.png
+    smaller: yes
+    toc: yes
+    toc_depth: 3
+  html_document:
+    fig_caption: yes
+    highlight: zenburn
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    fig_caption: yes
+    highlight: zenburn
+    toc: yes
+    toc_depth: 3
+  slidy_presentation:
+    incremental: yes
+  word_document: default
+geometry: margin=1cm
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Random phenomena and Stats
+
+<center style="color:blue;"> 
+_Statistics is the way to get knowledge (infer) from the empirical observation of a Ramdom Phenomena_
+</center>
+
+* __Random phenomena (a.k.a. Random experiment)__: _A phenomena where outcomes may be different under the same circumstances_
+
+* __inference__: A conclusion reached on the basis of __evidence__ and __reasoning__.
+    + __evidence__: observation, observed data 
+    + __reasoning__: thinking process 
+
+* __knowledge__: may vary depending on the analysis target:
+    + _Estimation_
+    + _Hypotheses testing_
+    + _Modelling_
+    + _Prediction_
+    + ...any combination/mixture of these !?
+    
+    
+----
+
+* Consider the _Coin toss_ Random phenomena:
+
+* We may study the problem from several different perspectives:
+    + _What is the probability of HEAD shows up if we toss a legal or fair coin ?_
+    + _What is the probability of HEAD shows up for this particular coin ?_
+    + _Is this particular coin a legal or fair coin ?_
+    + _I've observed 4 HEADs out of 10 tosses after having chosen randomly one coin. Is the coin I tossed the fair or the tricked coin ?_
+    
+----
+
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+
+* _What is the probability of HEAD shows up if we toss a legal or fair coin ?_
+    + We do not talk about any particular coin
+    + Using symmetry we get that half of the time HEAD shows up.
+    + This a _probability problem_: abstract description of legal coin toss
+
+----
+
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+
+* _What is the probability of HEAD shows up for this particular coin ?_
+    + We do not know in advance if the coin is fair or if it is tricked
+    + We need to _observe_ how does tossing this particular coin behaves
+    + This a _statistical inference_ problem: estimation of the probability of HEAD
+
+----
+
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+
+* _Is this particular coin a legal or fair coin ?_
+    + We need to _observe_ how does tossing this particular coin behaves
+    + This a _statistical inference_ problem: Hypotheses testing, is the probability of HEAD 1/2 !?
+
+----
+
+\ 
+\ 
+\ 
+\ 
+\ 
+\ 
+
+* _I've observed 4 HEADs out of 10 tosses after having chosen randomly one coin. Is the coin I tossed the fair or the tricked coin ?_
+    + We already have information about the coin tossing _observation_
+    + Using this information we have to _predict_/_decide_ which on is the coin tossed
+    + This a _statistical inference_ problem: Prediction/Hypotheses testing,
+
+## Statistics uses probability
+
+\ 
+\ 
+\ 
+
+<center style="color:blue;"> 
+_Statistics target in the broad sense is Random Phenomena description_
+</center>
+
+\ 
+\ 
+\ 
+
+* As a consequence: the language and concepts of probability are needed
+
+\ 
+
+* ...But also, the _observation_ (data recording process) may also be influenced by randomness, so...
+
+\ 
+
+[...An example of the lectures](./predGend.html)
+
+
+
+
+
+
